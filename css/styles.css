@@ -100,8 +100,8 @@ footer {
   background-color: var(--red);
 }
 
-.footer-fixed {
-  position: fixed;
+.footer-absolute {
+  position: absolute;
 }
 
 .a-footer {
@@ -121,6 +121,7 @@ button {
   font-size: 16px;
   justify-content: center;
   padding: 0.9rem 1.5rem;
+  position: relative;
   transition: 0.3s ease-out all;
 }
 
@@ -144,6 +145,12 @@ button {
 .btn:hover,
 .btn-lg:hover {
   background-color: var(--orange);
+}
+
+.btn:active,
+.btn-lg:active {
+  box-shadow: none;
+  top: 4px;
 }
 
 /*Hero Section*/
@@ -185,6 +192,7 @@ button {
 }
 
 .menu-container form {
+  display: flex;
   margin-top: 1rem;
 }
 
@@ -265,6 +273,9 @@ a.back {
   text-decoration: none;
   color: var(--black);
 }
+a.back > * {
+  vertical-align: middle;
+}
 
 /* About */
 .about-container {
@@ -306,35 +317,32 @@ a.back {
 }
 
 /* Login */
-.login-container {
-  padding-top: 67px;
-  padding-bottom: 87px;
-}
-
-.login-text {
-  color: var(--black);
-  font-weight: 900;
-  font-family: "Work Sans", sans-serif;
-}
-
-.login-field-container {
-  padding: 20px;
-  width: 50%;
-  transform: translate(50%);
-}
-
-.login-logo-container {
-  margin-top: 45px;
+.login-lah {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+}
+
+.login-lah > * {
+  width: 40%;
+}
+
+.login-logo,
+.login-container {
+  padding-right: 4rem;
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
   width: 100%;
   display: block;
   border: none;
-  border-bottom: 1px solid #999;
+  outline: none;
+  border-bottom: 1px solid var(--grey);
   padding: 6px 30px;
   font-family: "Work Sans", sans-serif;
   box-sizing: border-box;
