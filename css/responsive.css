@@ -1,0 +1,29 @@
+/* Tablets */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 670px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}

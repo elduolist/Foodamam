@@ -20,6 +20,27 @@ body {
 
 body {
   background-color: var(--white);
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  color: #0070d8;
+}
+
+img {
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
 }
 
 /* navbar */
@@ -38,20 +59,20 @@ nav {
 
 .li-navbar {
   float: left;
+  text-transform: uppercase;
 }
 
 .a-navbar {
   display: block;
   color: var(--white);
-  text-align: center;
+  font-weight: 700;
   padding: 14px 16px;
-  font-family: sans-serif;
+  text-align: center;
   text-decoration: none;
 }
 
 .a-navbar-title {
   color: var(--white);
-  font-family: sans-serif;
   font-weight: bold;
   left: 15px;
   margin: 0;
@@ -71,10 +92,16 @@ li a:hover:not(.active) {
 
 /* Footer */
 footer {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   overflow: hidden;
   background-color: var(--red);
+}
+
+.footer-fixed {
+  position: fixed;
 }
 
 .a-footer {
@@ -82,26 +109,40 @@ footer {
   color: var(--white);
   text-align: center;
   padding: 14px 16px;
-  font-family: sans-serif;
   text-decoration: none;
 }
 
 /* Button */
-.btn {
-  background-color: var(--yellow);
+button {
+  align-items: center;
+  background: none;
   border: none;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: center;
+  padding: 0.9rem 1.5rem;
+  transition: 0.3s ease-out all;
+}
+
+.btn,
+.btn-lg {
+  background-color: var(--yellow);
   border-radius: 40px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   color: var(--black);
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.9rem 1.5rem;
   text-align: center;
-  transition: 0.3s ease-out all;
-  width: 8rem;
 }
 
-.btn:hover {
+.btn {
+  width: 10rem;
+}
+
+.btn-lg {
+  width: 14rem;
+}
+
+.btn:hover,
+.btn-lg:hover {
   background-color: var(--orange);
 }
 
@@ -122,7 +163,6 @@ footer {
   left: 50%;
   text-align: left;
   transform: translate(-150%, -50%);
-  font-family: sans-serif;
   color: var(--black);
 }
 
@@ -133,16 +173,15 @@ footer {
 
 .body-row-text {
   padding: 20px;
-  font-family: sans-serif;
 }
 
 /* Menu */
 .menu-container {
-  margin: 2rem;
+  margin: 3rem 4rem;
 }
 
 .menu-container h2 {
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .menu-container form {
@@ -178,17 +217,19 @@ footer {
   overflow-x: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .menu-container .cards .arrow {
   margin-bottom: 20px;
 }
 
-.menu-container .cards #arrow-prev {
+#arrow-prev {
   transform: rotate(90deg);
 }
 
-.menu-container .cards #arrow-next {
+#arrow-next {
   transform: rotate(-90deg);
 }
 
@@ -213,4 +254,97 @@ footer {
   width: 16rem;
   height: 16rem;
   margin-bottom: 8px;
+}
+
+/* Menu Details */
+.menu-details-container {
+  padding: 30px;
+}
+
+a.back {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* About */
+.about-container {
+  margin: 3rem 4rem;
+}
+
+.about-container .info {
+  max-width: 50%;
+}
+
+.about-container .info > * {
+  margin-bottom: 1rem;
+}
+
+.a-github,
+.github-icon,
+.github-link {
+  display: inline-block;
+}
+
+.a-github {
+  font-size: 0;
+}
+
+.github-icon,
+.github-link {
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.github-icon {
+  width: 32px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.github-link {
+  text-decoration: underline;
+}
+
+/* Login */
+.login-container {
+  padding-top: 67px;
+  padding-bottom: 87px;
+}
+
+.login-text {
+  color: var(--black);
+  font-weight: 900;
+  font-family: "Work Sans", sans-serif;
+}
+
+.login-field-container {
+  padding: 20px;
+  width: 50%;
+  transform: translate(50%);
+}
+
+.login-logo-container {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.form-group:last-child {
+  margin-bottom: 0px;
 }
