@@ -1,15 +1,51 @@
 /* Tablets */
 @media all and (max-width: 1000px) {
-  h1 {
-    font-size: 28px;
+  .hero-image {
+    height: 50%;
   }
 
-  h2 {
-    font-size: 20px;
+  .a-navbar-title {
+    top: 11px;
   }
 
-  p {
-    font-size: 14px;
+  button,
+  #search-bar {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .btn {
+    width: 9rem;
+  }
+
+  .btn-lg {
+    width: 12rem;
+  }
+
+  .menu-container,
+  .about-container {
+    margin: 2rem 3rem;
+  }
+
+  #search-bar {
+    position: relative;
+  }
+
+  .menu-container h2 {
+    margin-left: 0.75rem;
+  }
+
+  .menu-container .card img {
+    border-radius: 24px;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .menu-container .cards .arrow img {
+    margin-bottom: 8px;
+  }
+
+  .about-container .info {
+    max-width: 75%;
   }
 }
 
@@ -23,7 +59,99 @@
     font-size: 16px;
   }
 
-  p {
-    font-size: 10px;
+  p,
+  a,
+  .github-icon,
+  .github-link {
+    font-size: 12px;
+  }
+
+  .hero-image {
+    height: 20%;
+  }
+
+  .a-navbar-title {
+    top: 11px;
+  }
+
+  button,
+  #search-bar {
+    padding: 0.6rem 0.9rem;
+  }
+
+  .btn {
+    width: 8rem;
+  }
+
+  .btn-lg {
+    width: 10rem;
+  }
+
+  .login-main-container {
+    flex-direction: column;
+  }
+
+  .menu-container,
+  .about-container {
+    margin: 1.5rem 2rem;
+  }
+
+  form {
+    position: relative;
+  }
+
+  #search-bar {
+    padding-right: 5.5rem;
+    width: 100%;
+  }
+
+  #search-btn {
+    position: absolute;
+    right: 0;
+    width: 30%;
+  }
+
+  .menu-container h2 {
+    margin-left: 0.5rem;
+  }
+
+  .menu-container .cards .arrow img {
+    margin-bottom: 12px;
+  }
+
+  .menu-container .card img {
+    border-radius: 16px;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 4px;
+  }
+
+  .about-container .info {
+    max-width: 80%;
+  }
+
+  .login-main-container > * {
+    width: 10rem;
+  }
+
+  .login-logo,
+  .login-container {
+    padding: 0;
+  }
+
+  .login-logo {
+    margin-bottom: 80px;
+  }
+
+  .login-text {
+    margin-bottom: 30px;
+  }
+
+  input {
+    padding: 6px;
+  }
+
+  #myLinks {
+    display: none;
   }
 }

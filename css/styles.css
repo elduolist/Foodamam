@@ -23,6 +23,13 @@ body {
   background-color: var(--white);
 }
 
+body.footer-fix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 a {
   color: #0070d8;
 }
@@ -39,16 +46,14 @@ h2 {
   font-size: 24px;
 }
 
-p {
+p,
+a {
   font-size: 16px;
 }
 
 /* navbar */
 
 nav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: var(--red);
 }
 
@@ -75,7 +80,7 @@ nav {
   color: var(--white);
   font-weight: bold;
   left: 15px;
-  margin: 0;
+  padding: 14px 16px;
   position: absolute;
   text-align: center;
   text-decoration: none;
@@ -90,18 +95,27 @@ li a:hover:not(.active) {
   background-color: var(--black);
 }
 
+/* Phone Nav */
+
+.icon:hover:not(.active) {
+  background-color: var(--black);
+}
+
+a.icon {
+  color: var(--white);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /* Footer */
 footer {
   position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
   background-color: var(--red);
-}
-
-.footer-absolute {
-  position: absolute;
 }
 
 .a-footer {
@@ -110,6 +124,10 @@ footer {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
 }
 
 /* Button */
@@ -153,7 +171,7 @@ button {
   top: 4px;
 }
 
-/*Hero Section*/
+/* Home */
 .hero-image {
   background-image: url("../img/tomato.jpg");
   height: 80%;
@@ -180,6 +198,11 @@ button {
 
 .body-row-text {
   padding: 20px;
+}
+
+.img-index {
+  width: 600px;
+  height: 300px;
 }
 
 /* Menu */
@@ -233,17 +256,17 @@ button {
   margin-bottom: 20px;
 }
 
-#arrow-prev {
+.arrow-prev {
   transform: rotate(90deg);
 }
 
-#arrow-next {
+.arrow-next {
   transform: rotate(-90deg);
 }
 
 .menu-container .card {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -290,6 +313,11 @@ a.back > * {
   margin-bottom: 1rem;
 }
 
+.about-desc {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
 .a-github,
 .github-icon,
 .github-link {
@@ -317,13 +345,6 @@ a.back > * {
 }
 
 /* Login */
-.login-main-container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
 .login-main-container > * {
   width: 40%;
 }
@@ -363,4 +384,8 @@ input {
 
 .form-group:last-child {
   margin-bottom: 0px;
+}
+
+.login-text {
+  margin-bottom: 50px;
 }
