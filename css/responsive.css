@@ -1,7 +1,7 @@
 /* Tablets */
 @media all and (max-width: 1000px) {
   .hero-image {
-    height: 50%;
+    height: 24rem;
   }
 
   .a-navbar-title {
@@ -19,6 +19,19 @@
 
   .btn-lg {
     width: 12rem;
+  }
+
+  .img-index {
+    width: 300px;
+  }
+
+  .body-row-text {
+    padding-right: 0;
+  }
+
+  .body-row-text h2,
+  .body-row-text p {
+    padding-bottom: 20px;
   }
 
   .menu-container,
@@ -61,6 +74,7 @@
 
   p,
   a,
+  button,
   .github-icon,
   .github-link {
     font-size: 12px;
@@ -87,8 +101,17 @@
     width: 10rem;
   }
 
+  .body-row-container,
   .login-main-container {
     flex-direction: column;
+  }
+
+  .img-index {
+    width: 100%;
+  }
+
+  .body-row-text {
+    padding-left: 0;
   }
 
   .menu-container,
@@ -151,7 +174,24 @@
     padding: 6px;
   }
 
-  #myLinks {
+  .a-navbar {
     display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .hero-image {
+    height: 20rem;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    color: var(--black);
   }
 }

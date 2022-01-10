@@ -12,24 +12,40 @@
         <nav>
             <a class="a-navbar-title" href="index.html"><h2>Foodamam</h2></a>
         
-            <ul class="ul-navbar" id="myLinks">
-                <li class="li-navbar"><a class="a-navbar a-active" href="index.html">HOME</a></li>
-                <li class="li-navbar"><a class="a-navbar" href="menu.html">MENU</a></li>
-                <li class="li-navbar"><a class="a-navbar" href="about.html">ABOUT</a></li>
-                <li class="li-navbar"><a class="a-navbar" href="login.html">LOGIN</a></li>
-           </ul>
-
-           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-           </a>
+            <ul class="ul-navbar">
+                <li class="li-navbar "><a class="a-navbar a-active" href="index.html">HOME</a></li>
+                <li class="li-navbar "><a class="a-navbar" href="menu.html">MENU</a></li>
+                <li class="li-navbar "><a class="a-navbar" href="about.html">ABOUT</a></li>
+                <li class="li-navbar "><a class="a-navbar" href="login.html">LOGIN</a></li>
+                <li class="li-navbar "><a href="javascript:void(0);" class="icon a-navbar" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
+<!--         
+        <nav>
+            <a class="a-navbar-title" href="index.html"><h2>Foodamam</h2></a>
+        
+            <ul class="ul-navbar" id="myLinks">
+                <li class="li-navbar li-desknav"><a class="a-navbar a-active" href="index.html">HOME</a></li>
+                <li class="li-navbar li-desknav"><a class="a-navbar" href="menu.html">MENU</a></li>
+                <li class="li-navbar li-desknav"><a class="a-navbar" href="about.html">ABOUT</a></li>
+                <li class="li-navbar li-desknav"><a class="a-navbar" href="login.html">LOGIN</a></li>
+                <li class="li-navbar li-phonenav"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+           </ul>
+        </nav> 
+-->
 
         <div class="flex-fill">
-            <div class="hero-image">
+            <div class="hero-image">   
                 <div class="hero-text">
-                    <h2 style="padding-bottom: 5px;">Did you know ?</h2>
-                    <h1 style="padding-bottom: 20px;">Tomato is good</h1>
-                    <p style="padding-bottom: 20px;">Tomato is good yes do you know that<br>tomato is very good because tomato is<br>very good so eat tomato because why not</p>
+                    <h2 class="pb-5">Did you know ?</h2>
+                    <h1 class="pb-20">Tomato is good</h1>
+                    <p class="pb-20 ">Tomato is good yes do you know that<br>tomato is very good because tomato is<br>very good so eat tomato because why not</p>
                     <button class="btn">Eat Now</button>
                 </div>
             </div>
@@ -37,8 +53,8 @@
             <div class="body-row-container">
                 <img src="img/tomato2.jpg" alt="Tomato" class="img-index">
                 <div class="body-row-text">
-                    <h2 style="padding-bottom: 50px;">MOST HIGH PROTEIN FOOD</h2>
-                    <p style="padding-bottom: 45px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 class="pb-50">MOST HIGH PROTEIN FOOD</h2>
+                    <p class="pb-45" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <button class="btn">Get To Know</button>
                 </div>
             </div>
@@ -46,8 +62,8 @@
             <div class="body-row-container">
                 <img src="img/tomato2.jpg" alt="Tomato" class="img-index">
                 <div class="body-row-text">
-                    <h2 style="padding-bottom: 50px;">DIET FOODS</h2>
-                    <p style="padding-bottom: 45px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 class="pb-50">DIET FOODS</h2>
+                    <p class="pb-45" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <button class="btn">Get To Know</button>
                 </div>
             </div>
@@ -58,7 +74,7 @@
 
         <script>
             function myFunction() {
-              var x = document.getElementById("myLinks");
+              var x = document.getElementsByClassName("icon");
               if (x.style.display === "block") {
                 x.style.display = "none";
               } else {
